@@ -1,5 +1,5 @@
-import type User from 'Frontend/generated/com/example/application/data/entity/User.js';
-import type Role from 'Frontend/generated/com/example/application/data/Role.js';
+import type User from 'Frontend/generated/initiative/hilla/reactive/microstream/data/entity/User.js';
+import type Role from 'Frontend/generated/initiative/hilla/reactive/microstream/data/Role.js';
 import { UserEndpoint } from 'Frontend/generated/endpoints.js';
 import { createContext, Dispatch, useEffect, useReducer } from 'react';
 

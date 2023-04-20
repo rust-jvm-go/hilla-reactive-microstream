@@ -1,4 +1,4 @@
-package com.example.application.data.entity;
+package initiative.hilla.reactive.microstream.data.entity;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -11,9 +11,9 @@ import jakarta.persistence.Version;
 public abstract class AbstractEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "idgenerator")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "id-generator")
     // The initial value is to account for data.sql demo data ids
-    @SequenceGenerator(name = "idgenerator", initialValue = 1000)
+    @SequenceGenerator(name = "id-generator", initialValue = 1000)
     private Long id;
 
     @Version
@@ -41,10 +41,9 @@ public abstract class AbstractEntity {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof AbstractEntity)) {
+        if (!(obj instanceof AbstractEntity other)) {
             return false; // null or other class
         }
-        AbstractEntity other = (AbstractEntity) obj;
 
         if (getId() != null) {
             return getId().equals(other.getId());

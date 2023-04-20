@@ -1,4 +1,4 @@
-package com.example.application.security;
+package initiative.hilla.reactive.microstream.security;
 
 import com.vaadin.flow.spring.security.VaadinWebSecurity;
 import java.util.Base64;
@@ -43,5 +43,4 @@ public class SecurityConfiguration extends VaadinWebSecurity {
         setStatelessAuthentication(http, new SecretKeySpec(Base64.getDecoder().decode(authSecret), JwsAlgorithms.HS256),
                 "com.example.application");
     }
-
 }

@@ -1,6 +1,6 @@
-package com.example.application.data.service;
+package initiative.hilla.reactive.microstream.data.service;
 
-import com.example.application.data.entity.User;
+import initiative.hilla.reactive.microstream.data.entity.User;
 import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

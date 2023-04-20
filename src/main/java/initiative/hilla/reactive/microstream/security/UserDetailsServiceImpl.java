@@ -1,9 +1,10 @@
-package com.example.application.security;
+package initiative.hilla.reactive.microstream.security;
 
-import com.example.application.data.entity.User;
-import com.example.application.data.service.UserRepository;
+import initiative.hilla.reactive.microstream.data.entity.User;
+import initiative.hilla.reactive.microstream.data.service.UserRepository;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -36,5 +37,4 @@ public class UserDetailsServiceImpl implements UserDetailsService {
                 .collect(Collectors.toList());
 
     }
-
 }

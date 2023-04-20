@@ -1,4 +1,4 @@
-# Custom project from Hilla
+# hilla-reactive-microstream
 
 This project can be used as a starting point to create your own Hilla application with Spring Boot.
 It contains all the necessary configuration and some placeholder files to get you started.

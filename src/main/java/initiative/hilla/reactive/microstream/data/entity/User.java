@@ -1,6 +1,6 @@
-package com.example.application.data.entity;
+package initiative.hilla.reactive.microstream.data.entity;
 
-import com.example.application.data.Role;
+import initiative.hilla.reactive.microstream.data.Role;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import dev.hilla.Nonnull;
 import jakarta.persistence.Column;
@@ -34,32 +34,40 @@ public class User extends AbstractEntity {
     public String getUsername() {
         return username;
     }
+
     public void setUsername(String username) {
         this.username = username;
     }
+
     public String getName() {
         return name;
     }
+
     public void setName(String name) {
         this.name = name;
     }
+
     public String getHashedPassword() {
         return hashedPassword;
     }
+
     public void setHashedPassword(String hashedPassword) {
         this.hashedPassword = hashedPassword;
     }
+
     public Set<Role> getRoles() {
         return roles;
     }
+
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
     }
+
     public byte @Nonnull [] getProfilePicture() {
         return profilePicture;
     }
+
     public void setProfilePicture(byte @Nonnull [] profilePicture) {
         this.profilePicture = profilePicture;
     }
-
 }
